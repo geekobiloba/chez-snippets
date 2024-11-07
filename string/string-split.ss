@@ -1,9 +1,10 @@
 ;;
+;; Split string by character or string
+;;
 ;; (string-split [:strict] str sep)
 ;; (string-split [:strict] [:str] str sepstr)
 ;; (string-split [:strict] [:char] str sepchar)
 ;;
-;; Split string by character or string.
 ;; The :strict option returns empty list when no separator is found.
 ;;
 (define-syntax string-split
