@@ -10,6 +10,8 @@
 (define-syntax string-split
   (syntax-rules (:strict :char :str)
 
+    ([_ str] (string-split :str str " "))
+
     ([_ str sep]
      (cond ([char?   sep] (string-split :char str sep))
            ([string? sep] (string-split :str  str sep))))
